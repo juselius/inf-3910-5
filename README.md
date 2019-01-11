@@ -43,9 +43,9 @@ The primary programming environment used during the course will be:
 ### Introduction to F\# on .NET Core
 
 * Order of declarations and files
-* Mutual recursion
+* Mutual recursion: types, functions and modules
 * Pattern matching
-* Definitions
+* Active patterns
 * Mutable variables
 
 ### Types and type systems
@@ -56,7 +56,7 @@ The primary programming environment used during the course will be:
 * The Curry-Howard isomorphism
   * Existence as proof
 * Algebraic data types
-* OOP and subtyping
+* OOP features
 
 ### Patterns and abstraction
 
@@ -70,9 +70,20 @@ The primary programming environment used during the course will be:
 * Interfaces
 * Constraints
 
-### Domain Specific Languages
-
 ### Designing with types
 
+* Stating intent
+* Domain modeling
+* Algebraic types as conjunction and disjunction
+* Making invalid state unrepresentable
+
+### Domain Specific Languages
+
+* Combinators
+* HTML combinators
+
 ### Reactive programming
+
+* Fable React
+* Fable Elmish
 

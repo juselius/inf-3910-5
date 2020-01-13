@@ -9,8 +9,8 @@ nature, focusing on application in F#.
 
 The primary programming environment used during the course will be:
 
-* F# 4.5
-* .NET Core 2.2
+* F# 4.7
+* .NET Core 3.1
 * Visual Studio Code
 * Fable 2.1 and Elmish
 * Paket
@@ -63,6 +63,7 @@ The primary programming environment used during the course will be:
 * Functors
 * Applicative functors
 * Monads
+* Optics
 
 ### Generic programming in F\#
 

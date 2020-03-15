@@ -1,9 +1,9 @@
 <!-- .slide: data-background="#000000" -->
-# UiT INF-3910-5
+## UiT INF-3910-5
 
-## Functional programming in F#
+#### Functional programming in F\#
 
-### The Corona edition
+##### The Corona edition
 
 --
 

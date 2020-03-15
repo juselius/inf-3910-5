@@ -14,7 +14,7 @@ This is a test slide deck, just to check that everyting works
 
 - A bullet point
 - Another convincing argument
-- These slides have been generated with _cicero.xyz_ and `reveal.js`
+- These slides have been generated with _https://cicero.xyz_ and `reveal.js`
 
 ---
 

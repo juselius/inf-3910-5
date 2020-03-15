@@ -6,6 +6,7 @@
 _The Corona edition_
 
 --
+
 ## Practical info
 
 * The remaining lectures will be screencast

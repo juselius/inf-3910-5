@@ -7,6 +7,7 @@ _The Corona edition_
 
 --
 
+<!-- .slide: data-background="#494949" -->
 ## Practical info
 
 * The remaining lectures will be screencast

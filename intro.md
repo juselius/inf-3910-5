@@ -6,13 +6,23 @@
 _The Corona edition_
 
 --
+## Practical info
 
-<!-- .slide: data-background="#696969" -->
+* The remaining lectures will be screencast
+* Discussions over Google Hangouts on Wednesdays 11-12
+* Colloquia over Google Hangouts
+* Exam is not affected
+
+--
+
+<!-- .slide: data-background="#494949" -->
 ## Testing
 
-- The audio is clear and crisp
-- Code examples are readable
-- These slides have been generated with _https://cicero.xyz_ and `reveal.js`
+* The audio is clear and crisp
+* Code examples are readable
+* Technology works and serves it's purpose
+
+Slides have been generated with _https://cicero.xyz_ and `reveal.js`
 
 ---
 

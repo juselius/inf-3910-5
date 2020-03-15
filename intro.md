@@ -7,13 +7,11 @@ _The Corona edition_
 
 --
 
-<!-- .slide: data-background="#ff8888" -->
-## Testing, testing
+<!-- .slide: data-background="#696969" -->
+## Testing
 
-This is a test slide deck, just to check that everyting works
-
-- A bullet point
-- Another convincing argument
+- The audio is clear and crisp
+- Code examples are readable
 - These slides have been generated with _https://cicero.xyz_ and `reveal.js`
 
 ---
@@ -24,18 +22,13 @@ Here we have some F# code:
 
 ```fsharp
 let webApp (next: HttpFunc) (ctx: HttpContext) =
-// let config = ctx.GetService<IConfiguration>()
 choose [
    POST >=> choose [
       route "/add" >=> addFile
-      route "/upload" >=> addFileJS
    ]
    GET >=> choose [
-      routex "(/?)" >=> htmlFile (publicPath + "/index.html")
       routef "/get/%s/%s" getFileClient
-      route "/signin" >=> signIn >=> redirectTo false "/?signin"
-      route "/signout" >=> signOut >=> redirectTo false "/?signout"
-      //route "/api/test" >=> authorized >=> json "ok"
+      route "/api/auth" >=> authorized >=> json "ok"
    ]
 ] next ctx
 ```

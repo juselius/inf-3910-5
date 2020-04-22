@@ -7,13 +7,13 @@ UiT INF-3910-5
 
 ### Overview
 
-* Anatomy of web services
-* Simple, in theory
-* Huge topic
+* Web page vs. Web app
+* Server side vs. client side rendering
+* Hosted vs. unhosted
 
 ---
 
-### Web request pipeline
+### Anatomy of web services
 
 ![Web pipeline](web-pipeline.png)
 
@@ -22,9 +22,9 @@ UiT INF-3910-5
 ### Functional pipelines
 
 ```fsharp
-type HttpCtx = { ... }
-type HttpFuncResult = Async<HttpCtx option>
-type HttpFunc = HttpCtx -> HttpFuncResult
+type HttpContext = { ... }
+type HttpFuncResult = Async<HttpContext option>
+type HttpFunc = HttpContext -> HttpFuncResult
 
 val (>>=) : HttpFuncResult -> HttpFunc -> HttpFuncResult
 val (>=>) : HttpFunc -> HttpFunc -> HttpFunc
@@ -36,9 +36,9 @@ val (>=>) : HttpFunc -> HttpFunc -> HttpFunc
 ### Building web servers
 
 * ASP.NET Core
-* Giraffe
-* _Saturn_
+* Giraffe (inspired by Suave)
 * _Suave_ (inspired by Haskell)
+* _Saturn_ (inspired by Phoenix)
 
 ---
 
@@ -52,12 +52,14 @@ val (>=>) : HttpFunc -> HttpFunc -> HttpFunc
 
 ### ASP.NET Core
 
-* Microsoft
 * Performant
-* Kestrel and IIS
 * Large collection of components
+* Kestrel (and IIS)
+* Microsoft
 
-### Architecture
+---
+
+### Architecture of ASP.NET Core
 
 * Middleware
 * Builder pattern
@@ -67,13 +69,39 @@ val (>=>) : HttpFunc -> HttpFunc -> HttpFunc
 
 ---
 
-### Middleware
+### Pipeline compositon
 
-![Delegate pipeline](request-delegate-pipeline.png)
+##### Binding
+
+* Lots of unwrapping and wrapping of types
+* Suboptimal performance
+* Stack pressure
+---
+
+##### Continuations
+
+* Avoids unwrapping and wrapping of types
+* Tail-Call Optimization
+* Early exit
 
 ---
 
-### Configuration
+### Functional pipelines
+
+```fsharp
+type HttpContext = { ... }
+type HttpFuncResult = Async<HttpContext option>
+type HttpFunc = HttpContext -> HttpFuncResult
+
+type HttpHandler = HttpFunc -> HttpContext -> HttpFuncResult
+type HttpHandler = HttpFunc -> HttpFunc
+
+val (>=>) : HttpHandler -> HttpHandler -> HttpHandler
+```
+
+---
+
+### Middleware
 
 ![Delegate pipeline](request-delegate-pipeline.png)
 
@@ -81,30 +109,32 @@ val (>=>) : HttpFunc -> HttpFunc -> HttpFunc
 
 ### Dependency Injection
 
-![Delegate pipeline](request-delegate-pipeline.png)
+##### Black magic
+
+![DI](DI.png)
+
+---
+
+
+### Configuration
+
+* `IApplicationBuilder` adds middleware to the pipline
+* Middleware is configured using Dependency Injection
+* Dependencies can be accessed from the `HttpContext`
+
+```fsharp
+let svc = ctx.GetService<IMyStuff> ()
+```
 
 ---
 
 ### Giraffe
 
+https://github.com/giraffe-fsharp/Giraffe
+
 * ASP.NET Core Middleware
 * Functional framework
 * Inspired by Suave
-
----
-
-### Using continuations
-
-Composing pipelines causes a lot of (unnecessary) wrapping and unwrapping of
-types:
-
-* Poor performace
-* Stack pressure
-
-Explicit continuations avoids this, and:
-
-* Early exit
-* Tail-Call Optimization
 
 ---
 
@@ -115,5 +145,5 @@ Explicit continuations avoids this, and:
 <!-- .slide: data-background="#000000" -->
 ## End of Fable
 
-Next: `ASP.NET Core and Giraffe`
+Next: `Persistence`
 

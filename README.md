@@ -20,11 +20,15 @@ The primary programming environment used during the course will be:
   - Elmish
   - Feliz
 
+## Agenda
+See [Agenda.md](Agenda.md)
+
 ## Dissemination
 
 * Course home page: https://github.com/juselius/inf-3910-5
 * Classroom: https://classroom.github.com/classrooms/44436820-inf-3910-5-spring-2021
 * Questions and resources: https://hackmd.io/team/inf-3910-5
+* [FAQ](FAQ.md)
 * UiT Canvas
 
 # F# resources
@@ -53,77 +57,3 @@ The primary programming environment used during the course will be:
   https://www.youtube.com/watch?v=o9pEzgHorH0
 * Game of Life in APL
   https://youtu.be/a9xAKttWgP4
-
-
-# Agenda
-
-### Introduction
-
-* Historical overview
-* Imperative and decalarative programming
-* Complexity
-* The perils of mutable state
-* Static and dynamic typing
-* Abstraction
-* Data representation
-* Composition
-
-### Functions
-
-* Relations vs. functions
-* Introduction to Lambda calculus
-* Binding and environments
-* Pure functions: Expressions and statements
-* Referential transparency
-* Composition
-* Higher-order functions
-* Currying and partial application
-* Recursion and tail call optimization
-
-### Introduction to F\# on .NET Core
-
-* Order of declarations and files
-* Mutual recursion: types, functions and modules
-* Pattern matching
-* Active patterns
-* Mutable variables
-
-### Types and type systems
-
-* Introduction to types
-* Type systems and type checking
-* Type inference
-* The Curry-Howard isomorphism
-  * Existence as proof
-* Algebraic data types
-* OOP features
-
-### Patterns and abstraction
-
-* Functors
-* Applicative functors
-* Monads
-* Optics
-
-### Generic programming in F\#
-
-* Types, classes and members
-* Interfaces
-* Constraints
-
-### Designing with types
-
-* Stating intent
-* Domain modeling
-* Algebraic types as conjunction and disjunction
-* Making invalid state unrepresentable
-
-### Domain Specific Languages
-
-* Combinators
-* HTML combinators
-
-### Reactive programming
-
-* Fable React
-* Fable Elmish

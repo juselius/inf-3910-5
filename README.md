@@ -11,12 +11,14 @@ nature, focusing on application in F#.
 
 The primary programming environment used during the course will be:
 
-* F# 5.0
-* .NET 5
+* F# 5.0 and .NET 5
 * Visual Studio Code
+  - Ionide-fsharp
+  - Live Share
+  - Version Lens
 * Fable 3 
-  * Elmish
-  * Feliz
+  - Elmish
+  - Feliz
 
 ## Dissemination
 

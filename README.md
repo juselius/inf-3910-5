@@ -11,7 +11,7 @@ nature, focusing on application in F#.
 
 The primary programming environment used during the course will be:
 
-* F# 4.7
+* F# 5.0
 * .NET 5
 * Visual Studio Code
 * Fable 3 

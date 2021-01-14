@@ -20,7 +20,7 @@ The primary programming environment used during the course will be:
   - Elmish
   - Feliz
 
-## Contacts 
+## Contact
 
 Jonas Juselius
 * E-mail: jonas.juselius@tromso.serit.no 

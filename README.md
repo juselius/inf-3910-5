@@ -20,6 +20,23 @@ The primary programming environment used during the course will be:
   - Elmish
   - Feliz
 
+## Contacts 
+
+Jonas Juselius
+* E-mail: jonas.juselius@tromso.serit.no 
+* GitHub: https://github.com/juselius
+* Twitter: @copointfree
+
+Marius Indreberg
+* E-mail: min034@post.uit.no
+
+## Dissemination
+
+* Course home page: https://github.com/juselius/inf-3910-5
+* Classroom: https://classroom.github.com/classrooms/44436820-inf-3910-5-spring-2021
+* Questions and resources: https://hackmd.io/team/inf-3910-5
+* UiT Canvas
+
 ## Agenda
 See [Agenda.md](Agenda.md)
 

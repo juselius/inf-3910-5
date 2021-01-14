@@ -122,4 +122,5 @@ The primary programming environment used during the course will be:
   https://www.youtube.com/watch?v=oytL881p-nQ
 * Stop writing classes! (Diederich)
   https://www.youtube.com/watch?v=o9pEzgHorH0
-  
+* Game of Life in APL
+  https://youtu.be/a9xAKttWgP4

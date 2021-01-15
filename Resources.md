@@ -16,24 +16,27 @@
 
 ## Videos
 
-* The value of values (Hickey)
+* The value of values (Hickey):
   https://www.youtube.com/watch?v=-I-VpPMzG7c
-* Simple made easy (Hickey)
+* Simple made easy (Hickey):
   https://www.youtube.com/watch?v=oytL881p-nQ
-* Stop writing classes! (Diederich)
+* Stop writing classes! (Diederich):
   https://www.youtube.com/watch?v=o9pEzgHorH0
-* Game of Life in APL
+* Game of Life in APL:
   https://youtu.be/a9xAKttWgP4
-* The MOVfuscator
+* The MOVfuscator:
   https://www.youtube.com/watch?v=2VF_wPkiBJY
   
 ## Books
-* The book of F# (Fancher)
-  https://nostarch.com/fsharp
-* Structure and interpretation of computer programs (Abelson & Sussman)
+* The book of F# (Fancher):
+  https://nostarch.com/fsharp (syllabus)
+* Structure and interpretation of computer programs (Abelson & Sussman):
   https://mitpress.mit.edu/sites/default/files/sicp/index.html
   (one of the best CS textbooks ever)
-* Seven languages in seven weeks (Tate)
+* Domain Modeling Made Functional (Wlaschin):
+  https://pragprog.com/titles/swdddf/domain-modeling-made-functional/
+  (excellent text on using types for modeling)
+* Seven languages in seven weeks (Tate):
   https://pragprog.com/titles/btlang/seven-languages-in-seven-weeks/
-* Seven more languages in seven weeks (Tate et al.)
+* Seven more languages in seven weeks (Tate et al.):
   https://pragprog.com/titles/7lang/seven-more-languages-in-seven-weeks/
